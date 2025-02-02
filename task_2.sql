@@ -5,6 +5,8 @@ CREATE TABLE Books (
   PublicationYear INT NOT NULL,
   Price DECIMAL(10, 2) NOT NULL,
   PRIMARY KEY (BookID)
+  author_id, 
+  author_name
 );
 
 CREATE TABLE Authors (

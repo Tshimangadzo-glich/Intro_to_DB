@@ -17,6 +17,7 @@ def create_database(host_name, database_name, user_name, user_password):
     
     except Error as e:
         print(f"Failed to connect to the MySQL server: {e}")
+        except mysql.connector.Error
     
     finally:
         if connection:
@@ -30,4 +31,4 @@ if __name__ == "__main__":
     user_password = "your_password"
     
     create_database(host_name, database_name, user_name, user_password)
-["CREATE DATABASE IF NOT EXISTS alx_book_store"]
+CREATE DATABASE IF NOT EXISTS alx_book_store

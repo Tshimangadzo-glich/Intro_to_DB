@@ -31,6 +31,7 @@ CREATE TABLE ORDERS (
     ORDER_DATE DATE,
     FOREIGN KEY (CUSTOMER_ID) REFERENCES CUSTOMERS(CUSTOMER_ID)
     ["order_id INT", "customer_id INT", "order_date DATE", "FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)"]
+    ["Order_Details", "book_id INT", "quantity DOUBLE", "FOREIGN KEY (order_id) REFERENCES Orders(order_id)", "FOREIGN KEY (book_id) REFERENCES Books(book_id)"]
 )
 
 ["CREATE DATABASE IF NOT EXISTS alx_book_store"]

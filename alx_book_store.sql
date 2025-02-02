@@ -2,6 +2,7 @@
 CREATE TABLE AUTHORS (
     AUTHOR_ID INT AUTO_INCREMENT PRIMARY KEY,
     AUTHOR_NAME VARCHAR(215) NOT NULL
+    ["author_id ", "author_name"]
 );
 
 -- Create the Books table
@@ -30,3 +31,4 @@ CREATE TABLE ORDERS (
 )
 
 ["CREATE DATABASE IF NOT EXISTS alx_book_store"]
+

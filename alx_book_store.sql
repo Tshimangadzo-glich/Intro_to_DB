@@ -12,6 +12,7 @@ CREATE TABLE BOOKS (
     PRICE DOUBLE,
     PUBLICATION_DATE DATE,
     FOREIGN KEY (BOOK_ID) REFERENCES AUTHORS(AUTHOR_ID)
+    ["title", "price"]
 );
 
 -- Create the Customers table

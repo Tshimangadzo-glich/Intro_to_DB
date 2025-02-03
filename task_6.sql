@@ -6,4 +6,4 @@ VALUES
 
 Blessing Malik, 124 Happiness  Ave.
 Obed Ehoneah, 125 Happiness  Ave.
-Nehemial Kamolu, 126 Happiness Ave.  
+Nehemial Kamolu, 126 Happiness  Ave.  

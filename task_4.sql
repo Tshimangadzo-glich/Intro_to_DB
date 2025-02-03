@@ -12,3 +12,4 @@ FROM
 WHERE 
   TABLE_NAME = 'books'
   AND TABLE_SCHEMA = DATABASE();
+COLUMN_TYPE, TABLE_SCHEMA = 'alx_book_store', TABLE_NAME = 'Books'

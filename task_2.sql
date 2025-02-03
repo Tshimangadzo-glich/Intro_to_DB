@@ -7,7 +7,7 @@ CREATE TABLE Books (
   PublicationYear INT NOT NULL,
   price DECIMAL(10, 2) NOT NULL,
   PRIMARY KEY (Book_ID)
-  "title", "price"
+  title, price
 );
 
 CREATE TABLE Authors (
@@ -15,7 +15,7 @@ CREATE TABLE Authors (
   FirstName VARCHAR(50) NOT NULL,
   LastName VARCHAR(50) NOT NULL,
   PRIMARY KEY (Author_ID)
-  "author_id ", "author_name"
+  author_id , author_name
 );
 
 CREATE TABLE BookAuthors (
@@ -36,6 +36,7 @@ CREATE TABLE Customers (
   City VARCHAR(50) NOT NULL,
   Country VARCHAR(50) NOT NULL,
   PRIMARY KEY (CustomerID)
+  customer_id , customer_name VARCHAR(215), email VARCHAR(215), address TEXT
 );
 
 CREATE TABLE Orders (

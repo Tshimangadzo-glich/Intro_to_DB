@@ -14,6 +14,7 @@ CREATE TABLE Authors (
   FirstName VARCHAR(50) NOT NULL,
   LastName VARCHAR(50) NOT NULL,
   PRIMARY KEY (Author_ID)
+  "author_id ", "author_name"
 );
 
 CREATE TABLE BookAuthors (

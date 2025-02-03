@@ -5,3 +5,5 @@ VALUES
   (4, 'Nehemial', 'Kamolu', 'nkamolu@sandtech.com', '', '126 Happiness Ave.', '', '');
 
 Blessing Malik, 124 Happiness  Ave.
+Obed Ehoneah, 125 Happiness  Ave.
+Nehemial Kamolu, 126 Happiness Ave.  

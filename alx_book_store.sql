@@ -7,20 +7,18 @@ CREATE TABLE AUTHORS (
 -- Create the Books table
 CREATE TABLE BOOKS (
     BOOK_ID INT AUTO_INCREMENT PRIMARY KEY,
-    TITLE VARCHAR(130) NOT NULL,
-    PRICE DOUBLE,
+    title VARCHAR(130) NOT NULL,
+    price DOUBLE,
     PUBLICATION_DATE DATE,
     FOREIGN KEY (BOOK_ID) REFERENCES AUTHORS(AUTHOR_ID)
-    ["title", "price"]
 );
 
 -- Create the Customers table
 CREATE TABLE CUSTOMERS (
-    CUSTOMER_ID INT AUTO_INCREMENT PRIMARY KEY,
-    CUSTOMER_NAME VARCHAR(215) NOT NULL,
-    EMAIL VARCHAR(215) UNIQUE,
-    ADDRESS TEXT
-    ["customer_id ", "customer_name VARCHAR(215)", "email VARCHAR(215)", "address TEXT"]
+    customer_id INT AUTO_INCREMENT PRIMARY KEY,
+    customer_name VARCHAR(215) NOT NULL,
+    email VARCHAR(215) UNIQUE,
+    address TEXT
 );
 
 -- Create the Orders table

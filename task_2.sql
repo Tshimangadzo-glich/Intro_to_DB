@@ -46,6 +46,7 @@ CREATE TABLE Orders (
   Total DECIMAL(10, 2) NOT NULL,
   PRIMARY KEY (Order_ID),
   FOREIGN KEY (Customer_ID) REFERENCES Customers(Customer_ID)
+  order_id INT, customer_id INT, order_date DATE, FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 );
 
 CREATE TABLE OrderDetails (

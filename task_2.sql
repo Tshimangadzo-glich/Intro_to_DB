@@ -6,26 +6,26 @@ CREATE TABLE Books (
   Publisher VARCHAR(100) NOT NULL,
   PublicationYear INT NOT NULL,
   Price DECIMAL(10, 2) NOT NULL,
-  PRIMARY KEY (BookID)
+  PRIMARY KEY (Book_ID)
 );
 
 CREATE TABLE Authors (
-  AuthorID INT AUTO_INCREMENT,
+  Author_ID INT AUTO_INCREMENT,
   FirstName VARCHAR(50) NOT NULL,
   LastName VARCHAR(50) NOT NULL,
-  PRIMARY KEY (AuthorID)
+  PRIMARY KEY (Author_ID)
 );
 
 CREATE TABLE BookAuthors (
-  BookID INT NOT NULL,
-  AuthorID INT NOT NULL,
-  PRIMARY KEY (BookID, AuthorID),
-  FOREIGN KEY (BookID) REFERENCES Books(BookID),
-  FOREIGN KEY (AuthorID) REFERENCES Authors(AuthorID)
+  Book_ID INT NOT NULL,
+  Author_ID INT NOT NULL,
+  PRIMARY KEY (Book_ID, Author_ID),
+  FOREIGN KEY (Book_ID) REFERENCES Books(Book_ID),
+  FOREIGN KEY (Author_ID) REFERENCES Authors(Author_ID)
 );
 
 CREATE TABLE Customers (
-  CustomerID INT AUTO_INCREMENT,
+  Customer_ID INT AUTO_INCREMENT,
   FirstName VARCHAR(50) NOT NULL,
   LastName VARCHAR(50) NOT NULL,
   Email VARCHAR(100) NOT NULL,
@@ -37,20 +37,19 @@ CREATE TABLE Customers (
 );
 
 CREATE TABLE Orders (
-  OrderID INT AUTO_INCREMENT,
-  CustomerID INT NOT NULL,
+  Order_ID INT AUTO_INCREMENT,
+  Customer_ID INT NOT NULL,
   OrderDate DATE NOT NULL,
   Total DECIMAL(10, 2) NOT NULL,
-  PRIMARY KEY (OrderID),
-  FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+  PRIMARY KEY (Order_ID),
+  FOREIGN KEY (Customer_ID) REFERENCES Customers(Customer_ID)
 );
 
 CREATE TABLE OrderDetails (
-  OrderID INT NOT NULL,
-  BookID INT NOT NULL,
+  Order_ID INT NOT NULL,
+  Book_ID INT NOT NULL,
   Quantity INT NOT NULL,
-  PRIMARY KEY (OrderID, BookID),
-  FOREIGN KEY (OrderID) REFERENCES Orders(OrderID),
-  FOREIGN KEY (BookID) REFERENCES Books(BookID)
+  PRIMARY KEY (Order_ID, Book_ID),
+  FOREIGN KEY (Order_ID) REFERENCES Orders(Order_ID),
+  FOREIGN KEY (Book_ID) REFERENCES Books(Book_ID)
 );
-
